@@ -1,8 +1,8 @@
-# Projet de Fin d'Études — Réduction de la variabilité produit en phase d'engagement sur laminoir à froid tandem 5 cages
+# Projet de Fin d'Études — De la modélisation à la formation : création d’un standard d’engagement bobine pour laminoir à froid
 
 > **Entreprise :** ArcelorMittal  
 > **Ligne de production :** Laminoir à froid tandem — 5 cages de type Quarto  
-> **Approche :** Analyse industrielle (A3, Ishikawa) + Machine Learning (XGBoost)  
+> **Approche :** Analyse industrielle (A3, AMDEC, Ishikawa) + Machine Learning (XGBoost)  
 > **Résultat :** 0 produit non-conforme sur 20 % de la production pendant 1 mois de test
 
 ---
@@ -23,7 +23,7 @@
 
 ### Contexte
 
-Au sein de la ligne de laminage à froid tandem (5 cages Quarto) d'ArcelorMittal, le processus de laminage se déroule en trois phases :
+Au sein de la ligne de laminage à froid tandem (5 cages de type Quarto) d'ArcelorMittal, le processus de laminage se déroule en trois phases :
 
 - **Phase d'engagement** : passage du produit cage par cage (C1 → C5) à vitesse réduite, sans régulation active
 - **Phase de laminage** : montée en vitesse pour le laminage nominal
@@ -31,7 +31,7 @@ Au sein de la ligne de laminage à froid tandem (5 cages Quarto) d'ArcelorMittal
 
 ### Problème identifié
 
-Pendant la phase d'engagement, l'absence de régulation combinée à la forte dépendance aux **presets d'effort définis par expérience opérateur** générait des **défauts dimensionnels sur les 2 à 3 premiers mètres** du produit — la zone qui s'enroule en tête d'enrouleuse.
+Pendant la phase d'engagement, l'absence de régulation combinée à la forte dépendance aux **presets d'efforts de sérrage définis par expérience opérateur** générait des **défauts dimensionnels sur les premiers mètres** du produit — la zone qui s'enroule en tête d'enrouleuse.
 
 La variabilité était amplifiée par :
 - les différences de niveau entre équipes
