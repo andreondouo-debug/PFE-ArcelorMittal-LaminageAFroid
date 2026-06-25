@@ -29,6 +29,9 @@ ArcelorMittal, qui es le Leader Mondial de la production d'acier, est implenté 
   <img src="https://github.com/user-attachments/assets/94b5a2c5-beff-4eef-b5d9-de134681cde8" width="450">
 </p>
 
+<p align="center">
+  <strong>Figure 1 :</strong> Différents types de cages de laminoirs couramment utilisés. Les flèches indiquent les efforts exercés lors du processus de laminage.
+</p>
 Sur cette ligne de laminage à froid tandem (5 cages de type Quarto (Deux cylindres de travail et deux cylindres de soutien)) d'ArcelorMittal, le processus de laminage se déroule globalement en trois phases :
 
 - **Phase d'engagement** : passage du produit cage par cage (C1 → C5) à vitesse réduite, sans régulation active
