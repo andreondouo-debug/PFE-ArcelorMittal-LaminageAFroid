@@ -1,8 +1,8 @@
-# Projet de Fin d'Études — Réduction de la variabilité produit en phase d'engagement sur laminoir à froid tandem 5 cages
+# Projet de Fin d'Études — De la modélisation à la formation : création d’un standard d’engagement bobine pour laminoir à froid
 
 > **Entreprise :** ArcelorMittal  
 > **Ligne de production :** Laminoir à froid tandem — 5 cages de type Quarto  
-> **Approche :** Analyse industrielle (A3, Ishikawa) + Machine Learning (XGBoost)  
+> **Approche :** Analyse industrielle (A3, AMDEC, Ishikawa) + Machine Learning (XGBoost)  
 > **Résultat :** 0 produit non-conforme sur 20 % de la production pendant 1 mois de test
 
 ---
@@ -23,7 +23,16 @@
 
 ### Contexte
 
-Au sein de la ligne de laminage à froid tandem (5 cages Quarto) d'ArcelorMittal, le processus de laminage se déroule en trois phases :
+ArcelorMittal, qui es le Leader Mondial de la production d'acier, est implenté dans plus d'un cinquantaine de pays, avec une forte présence en France, avec notamment 11 sites de production sur le térritoire. Pour mon stage de fin d'étude, j'ai été affecté sur le site de Florange précisement sur la ligne de laminage à froid. Le Laminage à froid qui est une opération de mise en forme de produit, ici de l'acier, que l'on va faire passer entre deux cylindre métalliques excercant ainsi des efforts de compréssion sur le produit. Pour limiter les effets de bord, on dispose de deux cylinbdres de soutien. Un ensemble deux cylindres de travail et dex cylindres de soutien forme une cage de laminage de type quarto.
+
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/94b5a2c5-beff-4eef-b5d9-de134681cde8" width="450">
+</p>
+
+<p align="center">
+  <strong>Figure 1 :</strong> Différents types de cages de laminoirs couramment utilisés. Les flèches indiquent les efforts exercés lors du processus de laminage.
+</p>
+Sur cette ligne de laminage à froid tandem (5 cages de type Quarto (Deux cylindres de travail et deux cylindres de soutien)) d'ArcelorMittal, le processus de laminage se déroule globalement en trois phases :
 
 - **Phase d'engagement** : passage du produit cage par cage (C1 → C5) à vitesse réduite, sans régulation active
 - **Phase de laminage** : montée en vitesse pour le laminage nominal
@@ -31,7 +40,7 @@ Au sein de la ligne de laminage à froid tandem (5 cages Quarto) d'ArcelorMittal
 
 ### Problème identifié
 
-Pendant la phase d'engagement, l'absence de régulation combinée à la forte dépendance aux **presets d'effort définis par expérience opérateur** générait des **défauts dimensionnels sur les 2 à 3 premiers mètres** du produit — la zone qui s'enroule en tête d'enrouleuse.
+Pendant la phase d'engagement, l'absence de régulation combinée à la forte dépendance aux **presets d'efforts de sérrage** générait des **défauts dimensionnels sur les premiers mètres** du produit — la zone qui s'enroule en tête d'enrouleuse.(Vue simplifié sur la ligne : https://app.diagrams.net/#G1SfCMVZST7MvXdP9abZaDZC4ATlHMqr8a#%7B%22pageId%22%3A%22T300FtAnsqmrBS-oEQUZ%22%7D)
 
 La variabilité était amplifiée par :
 - les différences de niveau entre équipes
