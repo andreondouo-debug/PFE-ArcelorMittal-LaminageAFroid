@@ -94,7 +94,7 @@ Les variables fortement corrélées ou redondantes ont été écartées pour év
 | Métrique | Description |
 |----------|-------------|
 | **MAE** (Mean Absolute Error) | Erreur moyenne absolue sur la prédiction des efforts |
-| **RMSE** (Root Mean Square Error) | Penalise davantage les grandes erreurs |
+| **RMSE** (Root Mean Square Error) | Pénalise davantage les grandes erreurs |
 | **R²** | Part de variance expliquée par le modèle |
 | **Taux de conformité** | % de produits dans la tolérance d'épaisseur cible |
 

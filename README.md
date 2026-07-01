@@ -54,23 +54,26 @@ Développement d'un **modèle de prédiction XGBoost** capable de fournir, en fo
 ```
 PFE-ArcelorMittal-LaminageAFroid/
 │
-├── README.md                      ← Ce fichier
+├── README.md                      ← Ce fichier (vue d'ensemble du projet)
+├── .gitignore
 │
-├── docs/
+├── docs/                          ← Documentation détaillée du projet
 │   ├── 01_contexte_et_problematique.md
 │   ├── 02_analyse_A3_Ishikawa.md
 │   ├── 03_modele_ML_XGBoost.md
 │   ├── 04_resultats_et_KPI.md
 │   └── 05_livrables.md
 │
-├── assets/
+├── assets/                        ← Ressources visuelles et livrables
 │   ├── schemas/                   ← Schémas du laminoir, diagrammes process
 │   ├── analyses/                  ← A3, Ishikawa, graphiques d'analyse
-│   └── resultats/                 ← Courbes de résultats, captures KPI
+│   ├── resultats/                 ← Courbes de résultats, captures KPI
+│   └── rapport/                   ← Rapport de projet et présentation de soutenance
 │
-└── code/
-    ├── README.md                  ← Instructions pour exécuter le code
-    └── notebooks/                 ← Notebooks Jupyter (analyse + modèle ML)
+└── code/                          ← Code source (analyse + modèle ML)
+    ├── README.md                  ← Instructions d'installation et d'exécution
+    ├── requirements.txt           ← Dépendances Python
+    └── notebooks/                 ← Notebooks Jupyter (EDA, features, modèle, résultats)
 ```
 
 ---

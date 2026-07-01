@@ -11,16 +11,16 @@ env/
 .ipynb_checkpoints/
 *.ipynb_metadata
 
-# Data sensibles (donnees de production ArcelorMittal confidentielles)
+# Données sensibles (données de production ArcelorMittal confidentielles)
 data/
 *.csv
 *.xlsx
 *.parquet
 
-# MacOS
+# macOS
 .DS_Store
 
-# Modeles entraines (trop lourds pour git)
+# Modèles entraînés (trop lourds pour git)
 *.pkl
 *.joblib
 *.h5
