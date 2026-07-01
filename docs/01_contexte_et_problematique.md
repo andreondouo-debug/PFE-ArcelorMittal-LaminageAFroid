@@ -2,7 +2,7 @@
 
 ## 1.1 L'entreprise — ArcelorMittal
 
-ArcelorMittal est le premier groupe sidérurgique mondial. Le site concerné par ce projet est le site de FLORANGE situé en LORRAINE. Le site possède une ligne de **laminage à froid**, utilisée pour réduire l'épaisseur de bandes d'acier qprès un premier laminage à chaud sur les lignes précédentes, afin d'obtenir des produits plats de précision (précis au dixième de mm).
+ArcelorMittal est le premier groupe sidérurgique mondial. Le site concerné par ce projet est le site de FLORANGE situé en LORRAINE. Le site possède une ligne de **laminage à froid**, utilisée pour réduire l'épaisseur de bandes d'acier après un premier laminage à chaud sur les lignes précédentes, afin d'obtenir des produits plats de précision (précis au dixième de mm).
 
 ---
 
